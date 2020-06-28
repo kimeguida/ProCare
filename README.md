@@ -1,6 +1,6 @@
 # ProCare: A Point Cloud Registration Approach for Protein Cavities
 <p align="center">
-<img src="https://raw.githubusercontent.com/kimeguida/ProCare/blob/master/docs/_img/procare.png" width="700" />
+<img src="https://github.com/kimeguida/ProCare/blob/master/docs/_img/procare.png" width="700" />
 </p>
 
 ## Description
