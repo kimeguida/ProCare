@@ -1,6 +1,6 @@
 # Misc
 include LICENSE.txt
-include README.txt
+include README.md
 
 # Compiled module
 recursive-include procare/open3d/open3d*.so

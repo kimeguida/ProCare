@@ -53,6 +53,7 @@
  
 
 from setuptools import setup, find_packages
+import procare.info as info
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -62,8 +63,6 @@ with open('requirements.txt', 'r') as f:
 install_requires = [line.strip() for line in lines if line != ('' or '\n')]
 
 
-import procare.info as info
-print(dir(info))
 setup(
     name="procare", # Replace with your own username
     version=info.__version__,
@@ -74,7 +73,7 @@ setup(
     long_description=long_description,
     keywords="protein cavity point cloud pharmaophore comparison",
     long_description_content_type="text/markdown",
-    url="https://github.com/kieguida/ProCare",
+    url="https://github.com/kimeguida/ProCare",
     packages=find_packages(),
     package_dir={'procare':'procare'},
     package_data={'procare':['open3d/*.so']},
