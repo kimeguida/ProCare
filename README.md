@@ -1,10 +1,10 @@
-# ProCare: A Point Cloud Registration Approach for Protein Cavities
+# ProCare: A Point Cloud Registration Approach to Align Protein Cavities
 <p align="center">
-<img src="https://github.com/kimeguida/ProCare/blob/master/docs/_img/procare.png" width="400" />
+<img src="https://github.com/kimeguida/ProCare/blob/master/docs/_img/procare.png" width="350" />
 </p>
 
 ## Description
-ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by en ensemble of 3D points. Each point is labelled by a pharmacophoric feature complementary to the closest protein residue property ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
+ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by en ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
 
 ## Requirements
 1) Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded fronm the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. 
@@ -15,18 +15,18 @@ IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/downl
 
 ## Install
 ProCare install package consists of:
--  A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle chemical data
--  ProCare scripts
-- Procare launcher script
+- A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle chemical data
+- procare python scripts
+- procare launcher script procare.py
 
 
 ##### 1. Download the install package
 ``` bash
-$ git clone https://github.com/kimeguida/ProCare
+$ git clone https://github.com/kimeguida/ProCare.git
 $ cd ProCare/
 ```
 ##### 2. Create a python virtual environement
-With conda/Anaconda:
+With Conda/Anaconda:
 ``` bash
 $ conda env create -n procare -f procare_environment.yml
 $ conda activate procare
@@ -38,9 +38,15 @@ $ conda activate procare
 ##### 4. Test installation
 ``` bash
 (procare) $ python -c "import procare"
-(procare) $ python -c "from procare.open3d import read_point_cloud"
+(procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
 ##### 5. Test Alignments
+Alignement is performed with the python script procare.py
+``` bash
+(procare) $ cd tests/
+(procare) $ python procare.py -s 2rh1_cavity.mol2 -t 5d6l_cavity.mol2 --transform
+```
+
 ## Citation
 If you use ProCare, please cite:
 Eguida, M.; Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. 2020. J. Med. Chem. https://doi.org/10.1021/acs.jmedchem.0c00422.
