@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------
-# <                               ProCare                                >
+# <                               ProCare                                    >
 # ----------------------------------------------------------------------------
 # The MIT License (MIT)
 #
@@ -46,21 +46,21 @@ class _mol2_:
 
         except IOError:
             print("Cannot read {}".format(ifile_))
-            return -1, None
+            return -1, None, None
 
         try:
             start = mol2.index("@<TRIPOS>ATOM")+1
             #print("Coordinates start at: {}".format(start))
         except ValueError:
             print("Cannot index @<TRIPOS>ATOM in mol2 file")
-            return -1, None
+            return -1, None, None
 
         try:    
             end = mol2.index("@<TRIPOS>BOND")-1
             #print("Coordinates end at: {}".format(end))
         except ValueError:
             print("Cannot index @<TRIPOS>BOND in mol2 file")
-            return -1, None
+            return -1, None, None
         
         ofilename = os.path.basename(ifile_).replace("mol2", "pcd")    
         try:
@@ -69,9 +69,10 @@ class _mol2_:
             print("mol2_to_pcd: Cannot write to current directory: "
                   "{}. Please check for access rights.".format(os.getcwd()))
             ofile.close()
-            return -1, None
+            return -1, None, None
 
         properties = []
+        colors = []
         ofile.write("VERSION .7\nFIELDS x y z rgb\nSIZE 4 4 4 4\n"
                     "TYPE F F F F\nCOUNT 1 1 1 1\n")
         ofile.write("WIDTH {}\nHEIGHT 1\nVIEWPOINT 0 0 0 1 0 0 0\n"
@@ -84,11 +85,13 @@ class _mol2_:
             y = float(mol2lines[3])
             z = float(mol2lines[4])
             properties.append([index, atom])
+            colors.append(color_[atom])
             ofile.write("\n{} {} {} {}".format(x, y, z, color_[atom]))
+
         ofile.close()                                                    
         
         #print(ofilename)
-        return ofilename, properties
+        return ofilename, properties, colors
 
 
 
