@@ -264,10 +264,9 @@ class _volsite_cavity_(_mol2_, _pcd_):
 
 
 
-    def write_mol2(self, ofile_, coordinates_, atom_, atom_type_, residue_, 
-                     macromol_="PROTEIN"):
-        return self._write_mol2(self, ofile_, coordinates_, atom_, atom_type_,
-                    residue_, macromol_="PROTEIN")
+    def write_mol2(self, ofile_, coordinates_):
+        return self._write_mol2(ofile_, coordinates_, self.ATOM, self.ATOM_TYPE,
+                    self.RESIDUE)
 
 
 
@@ -297,3 +296,6 @@ if __name__ == '__main__':
             molecule.pcd_to_mol2(args.input)
         elif args.itype == "mol2":
             molecule.mol2_to_pcd(args.input)
+
+        #coords = [[1, 2, 3, 8204959], [4, 5, 6, 8204959]]
+        #molecule.write_mol2('test.mol2', coords)
