@@ -48,7 +48,7 @@ Alignement is performed with the python script procare_launcher.py
 Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
-- using the --transform option will output
+- using the --transform option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
 
 ## Citation
 
@@ -74,7 +74,7 @@ https://github.com/kimeguida/ProCare
 http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
 
 ##### Support contacts
-Didier Rognan, PhD: rognan'[at]'unistra.fr\
+Didier Rognan, PhD: rognan'[at]'unistra.fr  
 Merveille Eguida: keguida'[at]'unistra.fr
 
 ## References
