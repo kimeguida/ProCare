@@ -70,12 +70,11 @@ URL = {https://doi.org/10.1021/acs.jmedchem.0c00422},
 ```
 
 ## Code
-https://github.com/kimeguida/ProCare
-
+https://github.com/kimeguida/ProCare  
 http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
 
 ##### Support contacts
-Didier Rognan, PhD: rognan'[at]'unistra.fr
+Didier Rognan, PhD: rognan'[at]'unistra.fr\
 Merveille Eguida: keguida'[at]'unistra.fr
 
 ## References
