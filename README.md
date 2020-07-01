@@ -4,13 +4,12 @@
 </p>
 
 ## Description
-ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by en ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
+ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by en ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
 
 ## Requirements
-1) Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded fronm the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database.\
-IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html).
+1. Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html).
 
-2) Python with procare package and dependencies installed (see install)
+2. Python with procare package and dependencies installed (see install)
 
 
 ## Install
@@ -46,14 +45,15 @@ Alignement is performed with the python script procare_launcher.py
 (procare) $ cd tests/
 (procare) $ python procare_launcher.py -s 2rh1_cavity.mol2 -t 5d6l_cavity.mol2 --transform
 ```
-Outputs:\
+Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
+- using the --transform option will output
 
 ## Citation
 
 If you use ProCare, please cite:\
-Eguida, M.$ Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. 2020. Journal of Medicinal Chemistry. https://doi.org/10.1021/acs.jmedchem.0c00422.
+Eguida, M.& Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. Journal of Medicinal Chemistry 2020. https://doi.org/10.1021/acs.jmedchem.0c00422.
 ``` bib
 @article{doi:10.1021/acs.jmedchem.0c00422,
 author = {Eguida, Merveille and Rognan, Didier},
@@ -71,7 +71,12 @@ URL = {https://doi.org/10.1021/acs.jmedchem.0c00422},
 
 ## Code
 https://github.com/kimeguida/ProCare
+
 http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
+
+##### Support contacts
+Didier Rognan, PhD: rognan'[at]'unistra.fr
+Merveille Eguida: keguida'[at]'unistra.fr
 
 ## References
 
@@ -81,7 +86,7 @@ http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
 
 3. Da Silva, F.; Desaphy, J.; Rognan, D. IChem: A Versatile Toolkit for Detecting, Comparing, and Predicting Protein–Ligand Interactions. ChemMedChem 2018, 13 (6), 507–510. https://doi.org/10.1002/cmdc.201700505.
 
-4. Rusu, R. B.; Blodow, N.; Beetz, M. Fast Point Feature Histograms (FPFH) for 3D Registration. 2009 IEEE Int. Conf. Robot. Autom. 2009, 3212–3217. https://doi.org/10.1109/ROBOT.2009.5152473
+4. Rusu, R. B.; Blodow, N.; Beetz, M. Fast Point Feature Histograms (FPFH) for 3D Registration. IEEE Int. Conf. Robot. Autom. 2009, 3212–3217. https://doi.org/10.1109/ROBOT.2009.5152473
 
 5. Rusu, R. B. Semantic 3D Object Maps for Everyday Manipulation in Human Living Environments, 2010, Vol. 24. https://doi.org/10.1007/s13218-010-0059-6
 
