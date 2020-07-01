@@ -4,7 +4,7 @@
 </p>
 
 ## Description
-ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by en ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
+ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by an ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
 
 ## Requirements
 1. Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html).
@@ -39,6 +39,8 @@ $ conda activate procare
 (procare) $ python -c "import procare"
 (procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
+No Error means the installation has been successful.
+
 ##### 5. Test Alignments
 Alignement is performed with the python script procare_launcher.py
 ``` bash
@@ -48,12 +50,12 @@ Alignement is performed with the python script procare_launcher.py
 Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
-- using the --transform option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
+- using the *--transform* option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
 
 ## Citation
 
-If you use ProCare, please cite:\
-Eguida, M.& Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. Journal of Medicinal Chemistry 2020. https://doi.org/10.1021/acs.jmedchem.0c00422.
+If you use ProCare, please cite:  
+Eguida, M., Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. J. Med. Chem. 2020. https://doi.org/10.1021/acs.jmedchem.0c00422.
 ``` bib
 @article{doi:10.1021/acs.jmedchem.0c00422,
 author = {Eguida, Merveille and Rognan, Didier},
@@ -72,6 +74,9 @@ URL = {https://doi.org/10.1021/acs.jmedchem.0c00422},
 ## Code
 https://github.com/kimeguida/ProCare  
 http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
+
+##### Signal issues
+https://github.com/kimeguida/ProCare/issues
 
 ##### Support contacts
 Didier Rognan, PhD: rognan'[at]'unistra.fr  
