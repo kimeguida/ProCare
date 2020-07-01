@@ -100,9 +100,9 @@ def fine_registration(source_, target_, result_ransac_, distance_threshold_,
     return result
 
 
-if __name__ == '__main__':
-    
 
+if __name__ == '__main__':
+  
     import os
     import argparse
     import copy
