@@ -7,16 +7,15 @@
 ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by an ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
 
 ## Requirements
-1. Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html).
-2. Python with procare package and dependencies installed (see install)
-3. A Linux/POSIX operating system
-
+1. Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html),
+2. A Linux/POSIX operating system,
+3. Python with procare package and dependencies installed (see install).
 
 ## Install (Linux/POSIX)
 ProCare install package consists of:
-- A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle chemical data
-- procare python scripts
-- procare launcher script procare_launcher.py
+- A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle IChem Volsite chemical features,
+- procare python scripts,
+- procare launcher script procare_launcher.py.
 
 ### Easy install (no conda experience)
 To easier installation, a bash script install.sh is provided.  
@@ -26,6 +25,7 @@ $ git clone https://github.com/kimeguida/ProCare.git
 $ cd ProCare/
 ```
 ##### 2. Execute bash script install.sh
+Will download miniconda and install procare.
 ``` bash
 $ bash install.sh <install_dir>
 ```
@@ -79,9 +79,11 @@ Outputs:
 Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
 If you followed the "Easy install" procedure, you just need to execute commands in the activate.sh script.
 If successful, the bash prompt will turn to:
+...
 ``` bash
 (procare) $
 ```
+..., ready for computation.
 
 ## Citation
 
