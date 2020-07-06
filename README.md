@@ -15,7 +15,7 @@ ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_
 ProCare install package consists of:
 - A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle IChem Volsite chemical features,
 - procare python scripts,
-- procare launcher script procare_launcher.py.
+- procare launcher script *procare_launcher.py*.
 
 ### Easy install (no conda experience)
 To easier installation, a bash script install.sh is provided.  
@@ -31,14 +31,14 @@ $ bash install.sh <install_dir>
 ```
 `<install_dir>` is the directory for installation. For example, `$HOME`.
 ##### 3. Test installation
-Execute bash commands in activate.sh, generated during installation. Note the change of the bash prompt.
+Execute bash commands in *activate.sh*, generated during installation. Note the change of the bash prompt.
 
 ``` bash
 (procare) $
 (procare) $ python -c "import procare"
 (procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
-No errors means the installation has been successful.
+No error means the installation has been successful.
 
 ### For conda users
 ##### 1. Download the install package
@@ -62,7 +62,7 @@ Note that you may need to source your conda beforehand `source /xxx/etc/profile.
 (procare) $ python -c "import procare"
 (procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
-No errors means the installation has been successful.
+No error means the installation has been successful.
 
 ### Test ProCare
 Alignement is performed with the python script procare_launcher.py
@@ -73,7 +73,8 @@ Alignement is performed with the python script procare_launcher.py
 Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
-- using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)  
+- using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
+  
 Help:
 ``` bash
 (procare) $ python procare_launcher.py --help
@@ -83,8 +84,7 @@ will list possible options.
 ### Usage
 Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
 If you followed the "[Easy install](https://github.com/kimeguida/ProCare#easy-install-no-conda-experience)" procedure, you just need to execute commands in the *activate.sh* script.  
-If successful, the bash prompt will turn into:  
-...
+If successful, the bash prompt will turn into:
 ``` bash
 (procare) $
 ```
