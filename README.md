@@ -18,7 +18,7 @@ ProCare install package consists of:
 - procare python scripts
 - procare launcher script procare_launcher.py
 
-### Easy install
+### Easy install (no conda experience)
 To easier installation, a bash script install.sh is provided.  
 ##### 1. Download the install package
 ``` bash
@@ -31,8 +31,10 @@ $ bash install.sh <install_dir>
 ```
 `<install_dir>` is the directory for installation. For example, `$HOME`.
 ##### 3. Test installation
+Execute bash commands in activate.sh, generated during installation. Note the change of the bash prompt.
+
 ``` bash
-$ ./activate.sh
+(procare) $
 (procare) $ python -c "import procare"
 (procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
@@ -50,6 +52,7 @@ With Conda/Anaconda:
 $ conda env create -n procare -f procare_environment.yml
 $ conda activate procare
 ```
+Note that you may need to source your conda beforehand `source /xxx/etc/profile.d/conda.sh`.
 ##### 3. Install procare python package
 ``` bash
 (procare) $ pip install procare_python_package/
@@ -74,7 +77,7 @@ Outputs:
 
 ### Usage
 Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
-This is simplified with the activate.sh script if you followed the "Easy install" procedure; you just need to execute commands in the activate.sh script.
+If you followed the "Easy install" procedure, you just need to execute commands in the activate.sh script.
 If successful, the bash prompt will turn to:
 ``` bash
 (procare) $
