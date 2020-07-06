@@ -38,7 +38,7 @@ Execute bash commands in activate.sh, generated during installation. Note the ch
 (procare) $ python -c "import procare"
 (procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
-No Error means the installation has been successful.
+No errors means the installation has been successful.
 
 ### For conda users
 ##### 1. Download the install package
@@ -62,7 +62,7 @@ Note that you may need to source your conda beforehand `source /xxx/etc/profile.
 (procare) $ python -c "import procare"
 (procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
 ```
-No Error means the installation has been successful.
+No errors means the installation has been successful.
 
 ### Test ProCare
 Alignement is performed with the python script procare_launcher.py
@@ -73,17 +73,22 @@ Alignement is performed with the python script procare_launcher.py
 Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
-- using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
+- using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)  
+Help:
+``` bash
+(procare) $ python procare_launcher.py --help
+```
+will list possible options.
 
 ### Usage
 Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
-If you followed the "Easy install" procedure, you just need to execute commands in the activate.sh script.
-If successful, the bash prompt will turn to:
+If you followed the "[Easy install](https://github.com/kimeguida/ProCare#easy-install-no-conda-experience)" procedure, you just need to execute commands in the *activate.sh* script.  
+If successful, the bash prompt will turn into:  
 ...
 ``` bash
 (procare) $
 ```
-..., ready for computation.
+...ready for computation.
 
 ## Citation
 
@@ -112,8 +117,8 @@ http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
 https://github.com/kimeguida/ProCare/issues
 
 ##### Support contacts
-Merveille Eguida: keguida'[at]'unistra.fr
-Didier Rognan, PhD: rognan'[at]'unistra.fr  
+Merveille Eguida: keguida'[at]'unistra.fr  
+Didier Rognan, PhD: rognan'[at]'unistra.fr
 
 ## References
 
