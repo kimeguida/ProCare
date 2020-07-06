@@ -8,17 +8,37 @@ ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_
 
 ## Requirements
 1. Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html).
-
 2. Python with procare package and dependencies installed (see install)
+3. A Linux/POSIX operating system
 
 
-## Install
+## Install (Linux/POSIX)
 ProCare install package consists of:
 - A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle chemical data
 - procare python scripts
 - procare launcher script procare_launcher.py
 
+### Easy install
+To easier installation, a bash script install.sh is provided.  
+##### 1. Download the install package
+``` bash
+$ git clone https://github.com/kimeguida/ProCare.git
+$ cd ProCare/
+```
+##### 2. Execute bash script install.sh
+``` bash
+$ bash install.sh <install_dir>
+```
+`<install_dir>` is the directory for installation. For example, `$HOME`.
+##### 3. Test installation
+``` bash
+$ ./activate.sh
+(procare) $ python -c "import procare"
+(procare) $ python -c "from procare.open3d.open3d.geometry import read_point_cloud"
+```
+No Error means the installation has been successful.
 
+### For conda users
 ##### 1. Download the install package
 ``` bash
 $ git clone https://github.com/kimeguida/ProCare.git
@@ -41,7 +61,7 @@ $ conda activate procare
 ```
 No Error means the installation has been successful.
 
-##### 5. Test Alignments
+### Test ProCare
 Alignement is performed with the python script procare_launcher.py
 ``` bash
 (procare) $ cd tests/
@@ -51,6 +71,14 @@ Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
 - using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
+
+### Usage
+Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
+This is simplified with the activate.sh script if you followed the "Easy install" procedure; you just need to execute commands in the activate.sh script.
+If successful, the bash prompt will turn to:
+``` bash
+(procare) $
+```
 
 ## Citation
 
@@ -79,8 +107,8 @@ http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html
 https://github.com/kimeguida/ProCare/issues
 
 ##### Support contacts
-Didier Rognan, PhD: rognan'[at]'unistra.fr  
 Merveille Eguida: keguida'[at]'unistra.fr
+Didier Rognan, PhD: rognan'[at]'unistra.fr  
 
 ## References
 
