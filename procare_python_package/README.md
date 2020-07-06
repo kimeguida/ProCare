@@ -65,7 +65,7 @@ Note that you may need to source your conda beforehand `source /xxx/etc/profile.
 No error means the installation has been successful.
 
 ### Test ProCare
-Alignement is performed with the python script procare_launcher.py
+Alignement is performed with the python script *procare_launcher.py*:
 ``` bash
 (procare) $ cd tests/
 (procare) $ python procare_launcher.py -s 2rh1_cavity.mol2 -t 5d6l_cavity.mol2 --transform
@@ -74,12 +74,12 @@ Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
 - using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
-  
+
 Help:
 ``` bash
 (procare) $ python procare_launcher.py --help
 ```
-will list possible options.
+Will list possible options.
 
 ### Usage
 Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
