@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libtinyfiledialogs.a  CMakeFiles/tinyfiledialogs.dir/tinyfiledialogs.c.o
+/usr/bin/ranlib ../../lib/libtinyfiledialogs.a
