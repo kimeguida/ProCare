@@ -28,6 +28,11 @@
 """Conversion between mol2 and pcd format of protein IChem VolSite cavities"""
 
 
+import os
+from time import strftime, localtime
+import numpy as np
+
+
 class _mol2_:
 
     def _mol2_to_pcd(self, ifile_, color_):
@@ -36,32 +41,26 @@ class _mol2_:
         if ifile_[-5:] != '.mol2':
             print("incorrect file extension")
             print("file format may be wrong --> no output")
-        
-        import os
 
         try:
             with open(ifile_, "r") as f:
-                mol2 = f.read().split("\n")
-            del mol2[-1]
+                mol2 = f.read()
 
-        except IOError:
-            print("Cannot read {}".format(ifile_))
+            atom_area = mol2.split('@<TRIPOS>ATOM\n')[1].split('@<TRIPOS>')[0]
+            atoms_tmp = atom_area.split('\n')
+            #print(atoms)
+            del atoms_tmp[-1]
+            atoms = []
+            for atm in atoms_tmp:
+                if atm == '':
+                    continue
+                atoms.append(atm)
+
+        except:
+            print("Cannot process mol2 {}".format(ifile_))
             return -1, None, None
 
-        try:
-            start = mol2.index("@<TRIPOS>ATOM")+1
-            #print("Coordinates start at: {}".format(start))
-        except ValueError:
-            print("Cannot index @<TRIPOS>ATOM in mol2 file")
-            return -1, None, None
 
-        try:    
-            end = mol2.index("@<TRIPOS>BOND")-1
-            #print("Coordinates end at: {}".format(end))
-        except ValueError:
-            print("Cannot index @<TRIPOS>BOND in mol2 file")
-            return -1, None, None
-        
         ofilename = os.path.basename(ifile_).replace("mol2", "pcd")    
         try:
             ofile = open(ofilename, "w")
@@ -75,15 +74,16 @@ class _mol2_:
         colors = []
         ofile.write("VERSION .7\nFIELDS x y z rgb\nSIZE 4 4 4 4\n"
                     "TYPE F F F F\nCOUNT 1 1 1 1\n")
-        ofile.write("WIDTH {}\nHEIGHT 1\nVIEWPOINT 0 0 0 1 0 0 0\n"
-                    "POINTS {}\nDATA ascii".format(end-start+1, end-start+1))
-        for i in range(start, end+1):
-            mol2lines = mol2[i].split()
-            index = int(mol2lines[0])
-            atom = str(mol2lines[1])
-            x = float(mol2lines[2])
-            y = float(mol2lines[3])
-            z = float(mol2lines[4])
+        ofile.write("WIDTH {0}\nHEIGHT 1\nVIEWPOINT 0 0 0 1 0 0 0\n"
+                    "POINTS {0}\nDATA ascii".format(len(atoms)))
+        #print(atoms)
+        for atm in atoms:
+            cols = atm.split()
+            index = int(cols[0])
+            atom = str(cols[1])
+            x = float(cols[2])
+            y = float(cols[3])
+            z = float(cols[4])
             properties.append([index, atom])
             colors.append(color_[atom])
             ofile.write("\n{} {} {} {}".format(x, y, z, color_[atom]))
@@ -147,8 +147,6 @@ class _pcd_:
     def _write_mol2(self, ofile_, coordinates_, atom_, atom_type_, residue_, 
                                                     macromol_="PROTEIN"):
 
-        import os
-        from time import strftime, localtime
         
         if ofile_[-5:] != '.mol2':
             ofile_ += '.mol2'
@@ -192,9 +190,7 @@ class _pcd_:
     
     def _pcd_to_mol2(self, ifile_, atom_, atom_type_, residue_, 
                                                     macromol_="PROTEIN"):
-        
-        import os
-        
+                
         coordinates = self._get_coordinates(ifile_)
         if coordinates != -1:
             ofile = os.path.basename(ifile_).replace('pcd', 'mol2')
@@ -276,6 +272,9 @@ class _volsite_cavity_(_mol2_, _pcd_):
 if __name__ == '__main__':
     
     import argparse
+    import os
+    from time import strftime, localtime
+    import numpy as np
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input', type=str, 

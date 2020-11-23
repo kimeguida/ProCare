@@ -101,11 +101,72 @@ def fine_registration(source_, target_, result_ransac_, distance_threshold_,
 
 
 
+def transform(mol2_ofile_, transformed_coords_, source_color_):
+    rotated_mol2 = _volsite_cavity_()
+    rot_coords = []
+    for point, color in zip(transformed_coords_, source_color_):
+        rot_coords.append([point[0], point[1], point[2], color])
+
+    rotated_mol2.write_mol2(mol2_ofile_, rot_coords)
+
+
+def transform_ligand(lig_mol2_, matrix_, ofile_):
+    with open(lig_mol2_) as f:
+        mol2 = f.read()
+        molecule_area = mol2.split('@<TRIPOS>MOLECULE\n')[1].split('@<TRIPOS>')[0]
+        molecule_area = "@<TRIPOS>MOLECULE\n" + molecule_area
+        atom_area = mol2.split('@<TRIPOS>ATOM\n')[1].split('@<TRIPOS>')[0]
+        atoms = atom_area.split('\n')
+        #print(atoms)
+        del atoms[-1]
+        new_atom_area = "@<TRIPOS>ATOM"
+        for l in atoms:
+            cols = l.split()
+            coords = np.array([float(cols[2]), float(cols[3]), float(cols[4]), 1])
+                # Umeyama Rt matrix [x, y, z, 1]
+            matrix = np.array(matrix_)
+            trans_coords = np.matmul(matrix, coords)
+            #print(trans_coords, coords)
+            new_atom_area += ("\n{:>7} {:<8} {:>9.4f} {:>9.4f} {:>9.4f} "
+                              "{:<5} {:>5} {:<8} {:>9}".format(cols[0],
+                                                     cols[1],
+                                                     trans_coords[0],
+                                                     trans_coords[1],
+                                                     trans_coords[2],
+                                                     cols[5],
+                                                     cols[6],
+                                                     cols[7],
+                                                     cols[8]
+                                                    ))
+        new_atom_area += "\n"
+        final_area = mol2.split('@<TRIPOS>BOND\n')[1]
+        final_area = "@<TRIPOS>BOND\n" + final_area
+
+
+    if ofile_[-5:] != '.mol2':
+            ofile_ += '.mol2'
+    basename = os.path.basename(ofile_)
+    ofile_ = basename
+    name = os.path.splitext(basename)[0]
+
+    header = ""
+    header += "# Modified by ProCare\n"
+    header += "# Modification time: {}\n".format(
+                            strftime("%a %d %b %Y %H:%M:%S", localtime()))
+    header += "# Name: {}.mol2\n\n".format(name)
+
+    with open(ofile_, 'w') as of:
+        of.write('{}{}{}{}'.format(header, molecule_area, new_atom_area, final_area))
+
+
+
 if __name__ == '__main__':
   
     import os
     import argparse
     import copy
+    import numpy as np
+    from time import strftime, localtime
 
     from procare.open3d.open3d.registration import registration_icp
     from procare.open3d.open3d.registration import registration_ransac_based_on_feature_matching
@@ -122,8 +183,6 @@ if __name__ == '__main__':
 
     from procare.convert import _volsite_cavity_
     from procare.procarescores import _ph4_ext_
-
-    import numpy as np
 
 
     parser = argparse.ArgumentParser(description='Parameters for ProCare')
@@ -237,6 +296,10 @@ if __name__ == '__main__':
         help='output rotated mol2', 
         required=False)
 
+    parser.add_argument('--ligandtransform', type=str,
+    help='output rotated ligand mol2', 
+    required=False)
+
     # inputs
     parser.add_argument('-s', '--source', type=str,
         help='Source mol2 file', 
@@ -278,7 +341,7 @@ if __name__ == '__main__':
                                          max_nn_feature_=args.featuremaxn)
 
 
-        result_global = global_registration(source_=source,
+        result_global_cfpfh = global_registration(source_=source,
                                             target_=target,
                                             cfpfh_source_=source_cfpfh,
                                             cfpfh_target_=target_cfpfh,
@@ -289,33 +352,35 @@ if __name__ == '__main__':
                                             max_iter_=args.ransaciter,
                                             max_valid_=args.ransacvalid)
 
-        result_fine = fine_registration(source_=source,
+        result_fine_cfpfh = fine_registration(source_=source,
                                         target_=target,
-                                        result_ransac_=result_global,
+                                        result_ransac_=result_global_cfpfh,
                                         distance_threshold_=args.icpdist,
                                         transformation_type_=args.icptranstype,
                                         relative_rmse_=args.icprmse,
                                         relative_fitness_=args.icpfitness,
                                         max_iter_=args.icpiter)
 
-        source_transformed = copy.deepcopy(source)
-        source_transformed.transform(result_fine.transformation)
-        print(source_transformed)
+        source_transformed_cfpfh = copy.deepcopy(source)
+        source_transformed_cfpfh.transform(result_fine_cfpfh.transformation)
+        print(source_transformed_cfpfh)
 
         
 
         if args.transform:
-            rot_file = 'rot_{}.mol2'.format(os.path.splitext(sourfe_file)[0])
-            rotated_mol2 = _volsite_cavity_()
-            rot_coords = []
-            for point, color in zip(source_transformed.points, 
-                                    source_color):
-                rot_coords.append([point[0], point[1], point[2], color])
+            rot_file_cfpfh = 'cfpfh_{}.mol2'.format(os.path.splitext(sourfe_file)[0])
+            transform(mol2_ofile_=rot_file_cfpfh,
+                        transformed_coords_=source_transformed_cfpfh.points,
+                        source_color_=source_color)
 
-            rotated_mol2.write_mol2(rot_file, rot_coords)
+        if args.ligandtransform != None:
+            cfpfh_lig = 'cfpfh_{}'.format(args.ligandtransform)
+            transform_ligand(args.ligandtransform,
+                            result_fine_cfpfh.transformation,
+                            cfpfh_lig)
 
         
-        ph4_ext = _ph4_ext_(source_transformed.points, target.points, 
+        ph4_ext = _ph4_ext_(source_transformed_cfpfh.points, target.points, 
                                             source_prop, target_prop, 1.5)
 
         ratio_aligned, ratio_CA_in_aligned, \
@@ -380,42 +445,42 @@ if __name__ == '__main__':
                                ratio_OG_in_aligned,
                                ratio_NZ_in_aligned,
                                ratio_DU_in_aligned,
-                               result_global.fitness,
-                               result_global.inlier_rmse,
-                               result_fine.fitness,
-                               result_fine.inlier_rmse,
-                               np.array(result_global.transformation)[0][0],
-                               np.array(result_global.transformation)[0][1],
-                               np.array(result_global.transformation)[0][2],
-                               np.array(result_global.transformation)[0][3],
-                               np.array(result_global.transformation)[1][0],
-                               np.array(result_global.transformation)[1][1],
-                               np.array(result_global.transformation)[1][2],
-                               np.array(result_global.transformation)[1][3],
-                               np.array(result_global.transformation)[2][0],
-                               np.array(result_global.transformation)[2][1],
-                               np.array(result_global.transformation)[2][2],
-                               np.array(result_global.transformation)[2][3],
-                               np.array(result_global.transformation)[3][0],
-                               np.array(result_global.transformation)[3][1],
-                               np.array(result_global.transformation)[3][2],
-                               np.array(result_global.transformation)[3][3],
-                               np.array(result_fine.transformation)[0][0],
-                               np.array(result_fine.transformation)[0][1],
-                               np.array(result_fine.transformation)[0][2],
-                               np.array(result_fine.transformation)[0][3],
-                               np.array(result_fine.transformation)[1][0],
-                               np.array(result_fine.transformation)[1][1],
-                               np.array(result_fine.transformation)[1][2],
-                               np.array(result_fine.transformation)[1][3],
-                               np.array(result_fine.transformation)[2][0],
-                               np.array(result_fine.transformation)[2][1],
-                               np.array(result_fine.transformation)[2][2],
-                               np.array(result_fine.transformation)[2][3],
-                               np.array(result_fine.transformation)[3][0],
-                               np.array(result_fine.transformation)[3][1],
-                               np.array(result_fine.transformation)[3][2],
-                               np.array(result_fine.transformation)[3][3]
+                               result_global_cfpfh.fitness,
+                               result_global_cfpfh.inlier_rmse,
+                               result_fine_cfpfh.fitness,
+                               result_fine_cfpfh.inlier_rmse,
+                               np.array(result_global_cfpfh.transformation)[0][0],
+                               np.array(result_global_cfpfh.transformation)[0][1],
+                               np.array(result_global_cfpfh.transformation)[0][2],
+                               np.array(result_global_cfpfh.transformation)[0][3],
+                               np.array(result_global_cfpfh.transformation)[1][0],
+                               np.array(result_global_cfpfh.transformation)[1][1],
+                               np.array(result_global_cfpfh.transformation)[1][2],
+                               np.array(result_global_cfpfh.transformation)[1][3],
+                               np.array(result_global_cfpfh.transformation)[2][0],
+                               np.array(result_global_cfpfh.transformation)[2][1],
+                               np.array(result_global_cfpfh.transformation)[2][2],
+                               np.array(result_global_cfpfh.transformation)[2][3],
+                               np.array(result_global_cfpfh.transformation)[3][0],
+                               np.array(result_global_cfpfh.transformation)[3][1],
+                               np.array(result_global_cfpfh.transformation)[3][2],
+                               np.array(result_global_cfpfh.transformation)[3][3],
+                               np.array(result_fine_cfpfh.transformation)[0][0],
+                               np.array(result_fine_cfpfh.transformation)[0][1],
+                               np.array(result_fine_cfpfh.transformation)[0][2],
+                               np.array(result_fine_cfpfh.transformation)[0][3],
+                               np.array(result_fine_cfpfh.transformation)[1][0],
+                               np.array(result_fine_cfpfh.transformation)[1][1],
+                               np.array(result_fine_cfpfh.transformation)[1][2],
+                               np.array(result_fine_cfpfh.transformation)[1][3],
+                               np.array(result_fine_cfpfh.transformation)[2][0],
+                               np.array(result_fine_cfpfh.transformation)[2][1],
+                               np.array(result_fine_cfpfh.transformation)[2][2],
+                               np.array(result_fine_cfpfh.transformation)[2][3],
+                               np.array(result_fine_cfpfh.transformation)[3][0],
+                               np.array(result_fine_cfpfh.transformation)[3][1],
+                               np.array(result_fine_cfpfh.transformation)[3][2],
+                               np.array(result_fine_cfpfh.transformation)[3][3]
                                ))
 
         os.system('rm {} {}'.format(sourfe_file, target_file))
