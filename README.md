@@ -13,7 +13,7 @@ ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_
 
 ## Install (Linux/POSIX)
 ProCare install package consists of:
-- A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle IChem Volsite chemical features,
+- A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle IChem VolSite chemical features,
 - procare python scripts,
 - procare launcher script *procare_launcher.py*.
 
@@ -68,12 +68,13 @@ No error means the installation has been successful.
 Alignement is performed with the python script *procare_launcher.py*:
 ``` bash
 (procare) $ cd tests/
-(procare) $ python procare_launcher.py -s 2rh1_cavity.mol2 -t 5d6l_cavity.mol2 --transform
+(procare) $ python procare_launcher.py -s 2rh1_cavity.mol2 -t 5d6l_cavity.mol2 --transform --ligandtransform 2rh1_ligand.mol2
 ```
 Outputs:
 - scores file procare_scores.tsv (tab-separated) : simplified output
 - procare.tsv : complete output containting transformation matrices elements
-- using the `--transform` option will output rotated cavity mol2 (rot_2rh1_cavity.mol2)
+- using the `--transform` option will output rotated cavity mol2 (cfpfh_2rh1_cavity.mol2)
+- using the `--ligandtransform` option with a ligand file as argument will output aligned ligand mol2 (cfpfh_2rh1_ligand.mol2)
 
 Help:
 ``` bash
