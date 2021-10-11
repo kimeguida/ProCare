@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------
 # The MIT License (MIT)
 #
-# Copyright (c) 2020 Merveille Eguida
+# Copyright (c) 2020 Université de Strasbourg
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,9 @@
 # IN THE SOFTWARE.
 # ----------------------------------------------------------------------------
 
-
+import numpy as np
+from sklearn.neighbors import NearestNeighbors
+import math
 
 
 class _similarity_metrics_:
@@ -45,7 +47,6 @@ class _similarity_metrics_:
 
     
     def cosine_similarity(self):
-        import math
         similarity = float(self.n_identity)/(math.sqrt(self.fitsize)*math.sqrt(self.refsize))
         return round(similarity, 4)
 
@@ -61,6 +62,7 @@ class _similarity_metrics_:
     
     def weighted_score(self):
 
+        # computed from sc-PDB 2016 archive
         frequency = {"CA": 0.3817,
                      "CZ": 0.1110,
                      "O": 0.0659,
@@ -110,8 +112,6 @@ class _ph4_strict_(_similarity_metrics_, _distances_):
     def __init__(self, source_coordinates_, target_coordinates_, 
                  source_properties_, target_properties_, distance_threshold_):
 
-        import numpy as np
-        from sklearn.neighbors import NearestNeighbors
         
         self.source_coordinates = source_coordinates_
         self.target_coordinates = target_coordinates_
@@ -231,9 +231,6 @@ class _ph4_rules_(_similarity_metrics_, _distances_):
 
     def __init__(self, source_coordinates_, target_coordinates_, 
                  source_properties_, target_properties_, distance_threshold_):
-
-        import numpy as np
-        from sklearn.neighbors import NearestNeighbors
         
         self.source_coordinates = source_coordinates_
         self.target_coordinates = target_coordinates_
@@ -346,15 +343,12 @@ class _ph4_rules_(_similarity_metrics_, _distances_):
 
 
 class _ph4_ext_(_similarity_metrics_, _distances_):
-    """  neighbors with distance < D 
+    """  all neighbors within distance D 
          and strict correspondence of properties """
 
     
     def __init__(self, source_coordinates_, target_coordinates_, 
                  source_properties_, target_properties_, distance_threshold_):
-
-        import numpy as np
-        from sklearn.neighbors import NearestNeighbors
 
         self.source_coordinates = source_coordinates_
         self.target_coordinates = target_coordinates_
@@ -429,21 +423,21 @@ class _ph4_ext_(_similarity_metrics_, _distances_):
 
                      )"""
                 self.n_identity += 1
-                if self.refProp[i][1] == "CA":
+                if self.fitProp[i][1] == "CA":
                     self.CA += 1
-                if self.refProp[i][1] == "CZ":
+                elif self.fitProp[i][1] == "CZ":
                     self.CZ += 1
-                if self.refProp[i][1] == "N":
+                elif self.fitProp[i][1] == "N":
                     self.N += 1
-                if self.refProp[i][1] == "NZ":
+                elif self.fitProp[i][1] == "NZ":
                     self.NZ += 1
-                if self.refProp[i][1] == "O":
+                elif self.fitProp[i][1] == "O":
                     self.O += 1
-                if self.refProp[i][1] == "OD1":
+                elif self.fitProp[i][1] == "OD1":
                     self.OD1 += 1
-                if self.refProp[i][1] == "OG":
+                elif self.fitProp[i][1] == "OG":
                     self.OG += 1
-                if self.refProp[i][1] == "DU":
+                elif self.fitProp[i][1] == "DU":
                     self.DU += 1
                     
         ratio_aligned = round(float(self.n_identity)/self.fitsize, 4)
@@ -485,8 +479,6 @@ class _ph4_soft_(_similarity_metrics_, _distances_):
     def __init__(self, source_coordinates_, target_coordinates_, 
                  source_properties_, target_properties_, distance_threshold_):
 
-        import numpy as np
-        from sklearn.neighbors import NearestNeighbors
         
         self.source_coordinates = source_coordinates_
         self.target_coordinates = target_coordinates_
@@ -592,11 +584,4 @@ class _ph4_soft_(_similarity_metrics_, _distances_):
             ratio_N_in_aligned, ratio_NZ_in_aligned, \
             ratio_O_in_aligned, ratio_OD1_in_aligned, \
             ratio_OG_in_aligned, ratio_DU_in_aligned
-
-
-
-if __name__ == '__main__':
-
-    import argparse
-
 

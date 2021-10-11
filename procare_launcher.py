@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------
 # The MIT License (MIT)
 #
-# Copyright (c) 2020 Merveille Eguida
+# Copyright (c) 2020 Université de Strasbourg
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -162,12 +162,6 @@ def transform_ligand(lig_mol2_, matrix_, ofile_):
 
 if __name__ == '__main__':
   
-    import os
-    import argparse
-    import copy
-    import numpy as np
-    from time import strftime, localtime
-
     from procare.open3d.open3d.registration import registration_icp
     from procare.open3d.open3d.registration import registration_ransac_based_on_feature_matching
     from procare.open3d.open3d.geometry import read_point_cloud
@@ -183,6 +177,12 @@ if __name__ == '__main__':
 
     from procare.convert import _volsite_cavity_
     from procare.procarescores import _ph4_ext_
+
+    import os
+    import argparse
+    import copy
+    import numpy as np
+    from time import strftime, localtime
 
 
     parser = argparse.ArgumentParser(description='Parameters for ProCare')
@@ -296,9 +296,9 @@ if __name__ == '__main__':
         help='output rotated mol2', 
         required=False)
 
-    parser.add_argument('--ligandtransform', type=str,
-    help='output rotated ligand mol2', 
-    required=False)
+    parser.add_argument('--ligandtransform', type=str, nargs='+',
+        help='output rotated ligand and/or protein mol2', 
+        required=False)
 
     # inputs
     parser.add_argument('-s', '--source', type=str,
@@ -319,14 +319,20 @@ if __name__ == '__main__':
     }
 
 
+    # sequential loading: sourcefile and target files can have the same file names
     source_cavity = _volsite_cavity_()
-    sourfe_file, source_prop, source_color = source_cavity.mol2_to_pcd(args.source)
+    source_file, source_prop, source_color = source_cavity.mol2_to_pcd(args.source)
+    if source_file != -1:
+        source = read_point_cloud(source_file)
+
+
     target_cavity = _volsite_cavity_()
     target_file, target_prop, target_color = target_cavity.mol2_to_pcd(args.target)
-
-    if sourfe_file and target_file != -1:
-        source = read_point_cloud(sourfe_file)
+    if target_file != -1:
         target = read_point_cloud(target_file)
+
+
+    if source_file and target_file != -1:
 
         source_cfpfh, source = process_pointcloud(pointcloud_=source,
                                              radius_normal_=args.normalrad,
@@ -363,19 +369,21 @@ if __name__ == '__main__':
 
         source_transformed_cfpfh = copy.deepcopy(source)
         source_transformed_cfpfh.transform(result_fine_cfpfh.transformation)
-        print(source_transformed_cfpfh)
+        #print(source_transformed_cfpfh)
 
         
 
         if args.transform:
-            rot_file_cfpfh = 'cfpfh_{}.mol2'.format(os.path.splitext(sourfe_file)[0])
+            rot_file_cfpfh = 'cfpfh_{}.mol2'.format(os.path.splitext(source_file)[0])
             transform(mol2_ofile_=rot_file_cfpfh,
                         transformed_coords_=source_transformed_cfpfh.points,
                         source_color_=source_color)
 
-        if args.ligandtransform != None:
-            cfpfh_lig = 'cfpfh_{}'.format(args.ligandtransform)
-            transform_ligand(args.ligandtransform,
+        if args.ligandtransform is not None:
+            for molecule in args.ligandtransform:
+                lig = os.path.basename(molecule)
+                cfpfh_lig = 'cfpfh_{}'.format(lig)
+                transform_ligand(molecule,
                             result_fine_cfpfh.transformation,
                             cfpfh_lig)
 
@@ -396,10 +404,13 @@ if __name__ == '__main__':
                 of.write("Source\tTarget\tScore\n")
 
         with open(args.scoreoutput, 'a') as of:
-            of.write("{}\t{}\t{}\n".format(os.path.splitext(sourfe_file)[0],
+            of.write("{}\t{}\t{}\n".format(os.path.splitext(source_file)[0],
                                            os.path.splitext(target_file)[0],
                                            score))
 
+
+        # output contributions of the differnt ph4 to the global score
+        # output matrix components
 
         if not os.path.isfile(args.output):
             with open(args.output, "w") as of:
@@ -433,7 +444,7 @@ if __name__ == '__main__':
                       "{}\t{}\t{}\t{}\t"
                       "{}\t{}\t{}\t{}\n"
                       ).format(args.paramid,
-                               os.path.splitext(sourfe_file)[0],
+                               os.path.splitext(source_file)[0],
                                os.path.splitext(target_file)[0],
                                args.classification,
                                score,
@@ -483,7 +494,11 @@ if __name__ == '__main__':
                                np.array(result_fine_cfpfh.transformation)[3][3]
                                ))
 
-        os.system('rm {} {}'.format(sourfe_file, target_file))
+        # cleaning
+        if source_file == target_file:
+            os.system('rm {}'.format(source_file))
+        else:
+            os.system('rm {} {}'.format(source_file, target_file))
 
 
 
