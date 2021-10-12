@@ -111,7 +111,7 @@ def transform(mol2_ofile_, transformed_coords_, source_color_):
 
 
 def transform_ligand(lig_mol2_, matrix_, ofile_):
-    with open(lig_mol2_) as f:
+    with open(lig_mol2_, 'r') as f:
         mol2 = f.read()
         molecule_area = mol2.split('@<TRIPOS>MOLECULE\n')[1].split('@<TRIPOS>')[0]
         molecule_area = "@<TRIPOS>MOLECULE\n" + molecule_area
