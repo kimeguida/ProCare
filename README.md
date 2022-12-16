@@ -64,14 +64,16 @@ Note that you may need to source your conda beforehand `source /xxx/etc/profile.
 ```
 No error means the installation has been successful.
 
-### Test ProCare
+### Usage
+
+#### Comparison and alignment
 Alignement is performed with the python script *procare_launcher.py*:
 ``` bash
 (procare) $ cd tests/
 (procare) $ python procare_launcher.py -s 2rh1_cavity.mol2 -t 5d6l_cavity.mol2 --transform --ligandtransform 2rh1_ligand.mol2
 ```
 Outputs:
-- scores file procare_scores.tsv (tab-separated) : simplified output
+- procare_scores.tsv : (tab-separated) simplified score output
 - procare.tsv : complete output containting transformation matrices elements
 - using the `--transform` option will output rotated cavity mol2 (cfpfh_2rh1_cavity.mol2)
 - using the `--ligandtransform` option with a ligand file as argument will output aligned ligand mol2 (cfpfh_2rh1_ligand.mol2)
@@ -80,9 +82,57 @@ Help:
 ``` bash
 (procare) $ python procare_launcher.py --help
 ```
-Will list possible options.
+Will list possible options.  
 
-### Usage
+
+#### Visual inspection of superposed points
+For visualization, associated points in the source and target cavity can be outputted by *procare_aligned_points.py*:
+```bash
+(procare) $ python utils/procare_aligned_points.py -c1 cfpfh_2rh1_cavity.mol2 -c2 5d6l_cavity.mol2 -o1 aligned_2rh1_cavity.mol2 -o2 aligned_5d6l_cavity.mol2
+```
+Outputs:
+- Matched points in the source and target cavities (aligned_2rh1_cavity.mol2, aligned_5d6l_cavity.mol2)
+- procare_scores_contribution.tsv: proportion of pharmacophoric features in matched points of the source cavity
+
+Help:
+``` bash
+(procare) $ utils/procare_aligned_points.py --help
+```
+
+
+#### Scoring/rescoring superposed points
+Rescoring of previously superposed cavities using other scoring schemes with *procare_apply_transformation.py*
+```bash
+(procare) $ python utils/procare_rescoring.py -s cfpfh_2rh1_cavity.mol2 -t 5d6l_cavity.mol2 -d 2
+
+```
+Outputs:
+- procare_rescoring.tsv: score file
+
+Help:
+``` bash
+(procare) $ utils/procare_rescoring.py --help
+```
+
+
+#### Apply a transformation to other mol2 objects in the source coordinates frame
+```bash
+(procare) $ python utils/procare_apply_transformation.py -f procare.tsv -a 2rh1_ligand.mol2 2rh1_cavity.mol2 -l 1
+
+```
+Outputs:
+- Aligned objects (rot_2rh1_ligand.mol2 rot_2rh1_cavity.mol2)
+
+Help:
+``` bash
+(procare) $ utils/procare_apply_transformation.py --help
+```
+Will list possible options.  
+
+
+
+
+### Tip
 Before executing, you need to activate the procare conda environment with `conda activate procare` (you may need to source your conda first).
 If you followed the "[Easy install](https://github.com/kimeguida/ProCare#easy-install-no-conda-experience)" procedure, you just need to execute commands in the *activate.sh* script.  
 If successful, the bash prompt will turn into:
@@ -90,6 +140,7 @@ If successful, the bash prompt will turn into:
 (procare) $
 ```
 ...ready for computation.
+
 
 ## Citation
 
@@ -109,6 +160,11 @@ note ={PMID: 32496770},
 URL = {https://doi.org/10.1021/acs.jmedchem.0c00422},
 }
 ```
+
+## Prospective applications
+
+
+
 
 ## Code
 https://github.com/kimeguida/ProCare  
