@@ -1,5 +1,6 @@
-<h1 align="center">ProCare: A Point Cloud Registration Approach to Align Protein Cavities</h1>
-[![Generic badge](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://shields.io/)
+<h1 align="center">ProCare: A Point Cloud Registration Approach to Align Protein Cavities</h1>  
+
+[![Generic badge](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://shields.io/)  
 
 <p align="center">
 <img src="https://github.com/kimeguida/ProCare/blob/master/docs/_img/procare.png" width="350" />
