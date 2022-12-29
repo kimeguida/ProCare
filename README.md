@@ -7,8 +7,9 @@
 </p>
 
 ## Description
-ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by an ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2012]( https://doi.org/10.1021/ci300184x)).
-More information in [Eguida & Rognan, 2020](https://doi.org/10.1021/acs.jmedchem.0c00422) ,[procare manual](https://github.com/kimeguida/ProCare/blob/master/docs/procare_manual.pdf) .
+ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by an ensemble of 3D points. 
+Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2012]( https://doi.org/10.1021/ci300184x)).
+More information in [Eguida & Rognan, 2020](https://doi.org/10.1021/acs.jmedchem.0c00422), [procare manual](https://github.com/kimeguida/ProCare/blob/master/docs/procare_manual.pdf).
 
 ## Requirements
 1. Cavities described by 3D pharmacophoric points, generetaed with IChem VolSite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [sc-PDB](http://bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html),
