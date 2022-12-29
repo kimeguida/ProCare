@@ -118,7 +118,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--line', type=int, required=True,
                 help='line number, eg. 1, where to extract matrix components. Starts with 0 = header')
     parser.add_argument('-a', '--appliedtomol2', type=str, required=True, nargs='+',
-                help='mol2 file to applied transformation')
+                help='mol2 file to apply transformation')
     parser.add_argument('--prefix', type=str, required=False,
                 help='prefix to output files')
     args = parser.parse_args()

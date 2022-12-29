@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------
 # The MIT License (MIT)
 #
-# Copyright (c) 2020 Merveille Eguida
+# Copyright (c) 2020 Université de Strasbourg
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -71,14 +71,14 @@ setup(
     author_email="keguida@unistra.fr",
     description="Point cloud registration for protein cavities",
     long_description=long_description,
-    keywords="protein cavity point cloud pharmaophore comparison",
+    keywords="protein cavity point cloud pharmacophore comparison",
     long_description_content_type="text/markdown",
     url="https://github.com/kimeguida/ProCare",
     packages=find_packages(),
     package_dir={'procare':'procare'},
     package_data={'procare':['open3d/*.so']},
     classifiers=[
-	"Development Status :: 2 - Pre-Alpha",
+	"Development Status :: 5 - Production/Stable",
 	"Natural Language :: English",
 	"Programming Language :: C",
         "Programming Language :: C++",

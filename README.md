@@ -1,13 +1,16 @@
 <h1 align="center">ProCare: A Point Cloud Registration Approach to Align Protein Cavities</h1>
+[![Generic badge](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://shields.io/)
+
 <p align="center">
 <img src="https://github.com/kimeguida/ProCare/blob/master/docs/_img/procare.png" width="350" />
 </p>
 
 ## Description
-ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by an ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2020]( https://doi.org/10.1021/ci300184x)).
+ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_registration) approach to align protein cavities decribed by an ensemble of 3D points. Each point is labelled with one of eight pharmacophoric features complementary to the one of the closest protein atom, or a dummy feature where appropriate ([Desaphy *et al*., 2012]( https://doi.org/10.1021/ci300184x)).
+More information in [Eguida & Rognan, 2020](https://doi.org/10.1021/acs.jmedchem.0c00422) ,[procare manual](https://github.com/kimeguida/ProCare/blob/master/docs/procare_manual.pdf) .
 
 ## Requirements
-1. Cavities described by 3D pharmacophoric points, generetaed with IChem Volsite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [scPDB](bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html),
+1. Cavities described by 3D pharmacophoric points, generetaed with IChem VolSite ([da Silva *et al.*, 2018](https://doi.org/10.1002/cmdc.20170050)) or downloaded from the [sc-PDB](http://bioinfo-pharma.u-strasbg.fr/scPDB/) database. IChem is downloadable [here](http://bioinfo-pharma.u-strasbg.fr/labwebsite/download.html),
 2. A Linux/POSIX operating system,
 3. Python with procare package and dependencies installed (see install).
 
@@ -15,7 +18,8 @@ ProCare is a [point cloud registration](https://en.wikipedia.org/wiki/Point_set_
 ProCare install package consists of:
 - A version of [Open3D](http://www.open3d.org/) v. 0.5.0.0 ([Zhou et al, 2018](https://doi.org/10.1007/s00104-009-1793-x)), modified to handle IChem VolSite chemical features,
 - procare python scripts,
-- procare launcher script *procare_launcher.py*.
+- procare launcher script *procare_launcher.py*,
+- utils scripts  
 
 ### Easy install (no conda experience)
 To easier installation, a bash script install.sh is provided.  
@@ -64,9 +68,9 @@ Note that you may need to source your conda beforehand `source /xxx/etc/profile.
 ```
 No error means the installation has been successful.
 
-### Usage
+## Usage
 
-#### Comparison and alignment
+### Comparison and alignment
 Alignement is performed with the python script *procare_launcher.py*:
 ``` bash
 (procare) $ cd tests/
@@ -85,7 +89,7 @@ Help:
 Will list possible options.  
 
 
-#### Visual inspection of superposed points
+### Visual inspection of superposed points
 For visualization, associated points in the source and target cavity can be outputted by *procare_aligned_points.py*:
 ```bash
 (procare) $ python utils/procare_aligned_points.py -c1 cfpfh_2rh1_cavity.mol2 -c2 5d6l_cavity.mol2 -o1 aligned_2rh1_cavity.mol2 -o2 aligned_5d6l_cavity.mol2
@@ -101,7 +105,7 @@ Help:
 
 
 #### Scoring/rescoring superposed points
-Rescoring of previously superposed cavities using other scoring schemes with *procare_apply_transformation.py*
+Rescoring of previously superposed cavities using other scoring schemes with *procare_rescoring.py*
 ```bash
 (procare) $ python utils/procare_rescoring.py -s cfpfh_2rh1_cavity.mol2 -t 5d6l_cavity.mol2 -d 2
 
@@ -121,7 +125,7 @@ Help:
 
 ```
 Outputs:
-- Aligned objects (rot_2rh1_ligand.mol2 rot_2rh1_cavity.mol2)
+- Aligned objects (rot_2rh1_ligand.mol2 and rot_2rh1_cavity.mol2)
 
 Help:
 ``` bash
@@ -145,15 +149,15 @@ If successful, the bash prompt will turn into:
 ## Citation
 
 If you use ProCare, please cite:  
-Eguida, M., Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. J. Med. Chem. 2020. https://doi.org/10.1021/acs.jmedchem.0c00422.
+Eguida, M., Rognan, D. A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design. J. Med. Chem. 2020, 63, 7127–7142. https://doi.org/10.1021/acs.jmedchem.0c00422.
 ``` bib
 @article{doi:10.1021/acs.jmedchem.0c00422,
 author = {Eguida, Merveille and Rognan, Didier},
 title = {A Computer Vision Approach to Align and Compare Protein Cavities: Application to Fragment-Based Drug Design},
 journal = {Journal of Medicinal Chemistry},
-volume = {xx},
-number = {xx},
-pages = {xx},
+volume = {63},
+number = {13},
+pages = {7127-7142},
 year = {2020},
 doi = {10.1021/acs.jmedchem.0c00422},
 note ={PMID: 32496770},
@@ -162,7 +166,11 @@ URL = {https://doi.org/10.1021/acs.jmedchem.0c00422},
 ```
 
 ## Prospective applications
+1. Eguida, M.; Rognan, D. Unexpected Similarity between HIV-1 Reverse Transcriptase and Tumor Necrosis Factor Binding Sites Revealed by Computer Vision. J. Cheminform. 2021, 13, 1–13
 
+2. Eguida, M.; Schmitt-Valencia, C.; Hibert, M.; Villa, P.; Rognan, D. Target-Focused Library Design by Pocket-Applied Computer Vision and Fragment Deep Generative Linking. J. Med. Chem. 2022, 65, 13771–13783.
+
+3. CACHE hits prediction Challenge #1 https://cache-challenge.org
 
 
 

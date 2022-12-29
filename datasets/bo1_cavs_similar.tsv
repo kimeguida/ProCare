@@ -1,0 +1,384 @@
+uniprot_ac_1	uniprot_ac_2	pdb_1	pdb_2	rmsd_sybyl_align	uniprot_function_kw	cluster_id
+P67911	P67910	2x86_3	1eq2_6	0.8638	Isomerase	cluster_2
+O09114	P41222	2ktd_1	4imo_2	2.8371	Isomerase	cluster_2
+P9WMM5	B5I4P8	2y85_2	4tx9_1	2.1747	Isomerase	cluster_2
+P9WMM5	P16250	2y85_2	5dn1_1	1.7208	Isomerase	cluster_2
+P24300	P12070	1xid_1	1xli_1	2.0563	Isomerase	cluster_2
+P09041	P00558	2paa_1	2wzb_1	4.5237	Kinase;Transferase	cluster_3
+P09041	Q7SIB7	2paa_1	1kf0_1	1.2869	Kinase;Transferase	cluster_3
+P00558	Q7SIB7	2wzb_1	1kf0_1	4.143	Kinase;Transferase	cluster_3
+Q16654	Q15119	2e0a_2	2bu2_2	3.5802	Kinase;Transferase	cluster_3
+Q16654	Q64536	2e0a_2	1jm6_2	3.9002	Kinase;Transferase	cluster_3
+P9WPA7	Q83EV9	2ges_1	3tqc_1	2.2968	Kinase;Transferase	cluster_3
+O35904	Q8BTI9	4ajw_1	4bfr_1	3.3738	Kinase;Transferase	cluster_3
+P15266	Q2SWE7	1nhk_1	4hr2_2	3.225	Kinase;Transferase	cluster_3
+P15266	Q5SLV5	1nhk_1	1wkl_2	1.0259	Kinase;Transferase	cluster_3
+Q13232	Q381H3	1zs6_1	4fkx_3	0.5008	Kinase;Transferase	cluster_3
+Q9U1E1	Q381H3	3ngu_2	4fkx_3	0.361	Kinase;Transferase	cluster_3
+Q9U1E1	A5J299	3ngu_2	4uof_3	1.0482	Kinase;Transferase	cluster_3
+Q9U1E1	Q5SLV5	3ngu_2	1wkl_2	4.4634	Kinase;Transferase	cluster_3
+Q381H3	A5J299	4fkx_3	4uof_3	1.0155	Kinase;Transferase	cluster_3
+P15531	P52175	2hvd_3	1be4_1	0.8145	Kinase;Transferase	cluster_3
+P15531	P22887	2hvd_3	1bux_1	0.6989	Kinase;Transferase	cluster_3
+P52175	P22887	1be4_1	1bux_1	0.7486	Kinase;Transferase	cluster_3
+O58429	Q5SLV5	2dxd_2	1wkl_2	0.7559	Kinase;Transferase	cluster_3
+Q6GJI9	P65249	4gsy_1	4hej_1	0.4596	Kinase;Transferase	cluster_3
+Q16696	P00178	4ejg_3	1suo_1	1.6869	Monooxygenase;Oxidoreductase	cluster_4
+P00438	P20586	1pdh_1	1d7l_1	0.2527	Monooxygenase;Oxidoreductase	cluster_4
+Q16831	O95045	3euf_3	3p0e_4	0.722	Glycosyltransferase;Transferase	cluster_5
+Q9K4U1	P12758	4g8j_3	1tgv_1	0.5519	Glycosyltransferase;Transferase	cluster_5
+Q5EEL8	O34925	3uaw_1	4da0_1	1.2662	Glycosyltransferase;Transferase	cluster_5
+P08037	P15291	1fgx_1	4ee3_3	3.6692	Glycosyltransferase;Transferase	cluster_5
+A5U4M0	P9WFX5	4ztv_1	3qqs_1	2.9802	Glycosyltransferase;Transferase	cluster_5
+Q9H2K2	Q6PFX9	3kr8_1	4n4t_1	1.8142	Glycosyltransferase;Transferase	cluster_5
+Q9H2K2	O95271	3kr8_1	4dvi_1	1.6759	Glycosyltransferase;Transferase	cluster_5
+Q6PFX9	O95271	4n4t_1	4dvi_1	0.4999	Glycosyltransferase;Transferase	cluster_5
+P00491	P55859	1pf7_1	1a9p_1	1.4335	Glycosyltransferase;Transferase	cluster_5
+Q7CP66	P07650	4yek_1	4ead_1	1.7101	Glycosyltransferase;Transferase	cluster_5
+Q15274	I3LK75	4kww_3	4i9a_2	2.2202	Glycosyltransferase;Transferase	cluster_5
+Q99558	Q9WUL6	4dn5_2	4g3e_1	2.5581	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P15790	P28523	4fi1_1	1daw_1	0.9649	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P15790	P19784	4fi1_1	3ofm_1	1.1709	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P15790	P68400	4fi1_1	1pjk_1	1.2434	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P28523	P19784	1daw_1	3ofm_1	0.5854	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P19784	P68400	3ofm_1	1pjk_1	0.9584	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P78362	Q96SB4	2x7g_1	1wbp_2	0.7241	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P48730	P49674	3uyt_3	4hni_2	1.1925	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P49674	Q9HCP0	4hni_2	2cmw_1	1.8863	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P49674	Q9Y6M4	4hni_2	2chl_1	2.0322	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q9HCP0	Q9Y6M4	2cmw_1	2chl_1	1.0302	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+O02697	P48736	1e7v_1	1e8z_1	1.297	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q9NQU5	O96013	4ks7_1	2cdz_1	0.8436	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P80192	Q5TCX8	3dtc_1	4uya_1	1.7154	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P25098	P21146	3krw_1	3pvu_1	1.0651	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P32298	P34947	4yhj_2	4tnb_1	2.1193	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q15418	P18654	2z7q_1	3g51_1	2.017	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P05132	P00517	1bx6_1	1q24_1	1.0016	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P05132	P17612	1bx6_1	2gu8_1	0.8756	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P05132	P36887	1bx6_1	1cdk_1	1.1104	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P00517	P17612	1q24_1	2gu8_1	0.4988	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q9P289	Q9Y6E0	3ggf_1	3a7h_1	2.9767	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q9P289	O00506	3ggf_1	2xik_1	2.4518	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q9Y6E0	O00506	3a7h_1	2xik_1	1.6809	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q4KMI8	P53350	3d5w_1	2owb_1	1.0452	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q9NYY3	Q9H4B4	4i6f_1	4b6l_1	1.6585	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q61846	Q14680	4bfm_1	4bkz_1	0.9983	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q00536	P24941	3mtl_1	1aq1_1	3.4394	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P16892	P27361	2b9f_1	2zoq_1	2.0654	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P16892	P63086	2b9f_1	2z7l_1	2.8005	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P27361	P63086	2zoq_1	2z7l_1	1.0062	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P53779	P45983	1jnk_1	2h96_1	2.5811	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q15759	P47811	3gc8_2	1yw2_1	2.3237	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q15759	Q16539	3gc8_2	1bl6_1	2.7048	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q15759	O15264	3gc8_2	4eyj_1	2.4138	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P47811	Q16539	1yw2_1	1bl6_1	1.9861	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P47811	O15264	1yw2_1	4eyj_1	1.5045	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+Q16539	O15264	1bl6_1	4eyj_1	1.7098	Kinase;Serine/threonine-protein kinase;Transferase	cluster_6
+P00791	P0DJD7	1psa_1	1qrp_1	0.7758	Aspartyl protease;Hydrolase;Protease	cluster_7
+P0A725	A1JJJ9	4mqy_1	3nzk_2	1.3439	Hydrolase	cluster_9
+Q86W56	Q9QYM2	4b1h_1	3uel_1	0.4857	Hydrolase	cluster_9
+Q82ZJ0	Q939R9	2os1_1	3sw8_1	0.5127	Hydrolase	cluster_9
+Q82ZJ0	Q8DP79	2os1_1	2ai7_1	0.5306	Hydrolase	cluster_9
+Q82ZJ0	Q5HGZ3	2os1_1	3u7k_1	0.8762	Hydrolase	cluster_9
+Q939R9	Q8DP79	3sw8_1	2ai7_1	0.1616	Hydrolase	cluster_9
+Q939R9	P68771	3sw8_1	2os3_1	0.5511	Hydrolase	cluster_9
+Q939R9	Q5HGZ3	3sw8_1	3u7k_1	0.968	Hydrolase	cluster_9
+Q939R9	O31410	3sw8_1	1lqy_1	0.7882	Hydrolase	cluster_9
+Q8DP79	P68771	2ai7_1	2os3_1	0.5612	Hydrolase	cluster_9
+Q8DP79	Q5HGZ3	2ai7_1	3u7k_1	0.9913	Hydrolase	cluster_9
+Q8DP79	O31410	2ai7_1	1lqy_1	0.7747	Hydrolase	cluster_9
+P68771	Q5HGZ3	2os3_1	3u7k_1	1.6045	Hydrolase	cluster_9
+Q5HGZ3	O31410	3u7k_1	1lqy_1	0.96	Hydrolase	cluster_9
+P27815	Q07343	3tvx_1	1ro6_2	1.1425	Hydrolase	cluster_9
+A5F5R2	Q9KPI8	4wkb_1	3dp9_2	0.3791	Hydrolase	cluster_9
+A5F5R2	P0AF12	4wkb_1	1nc1_1	0.6293	Hydrolase	cluster_9
+Q9KPI8	P0AF12	3dp9_2	1nc1_1	0.6835	Hydrolase	cluster_9
+P00830	P10719	2hld_8	1mab_1	1.2114	Hydrolase	cluster_9
+P80912	P49773	1rzy_1	1av5_1	0.393	Hydrolase	cluster_9
+P56658	P03958	1ndy_1	1a4l_2	0.7598	Hydrolase	cluster_9
+P9WGR1	P9WGR0	1bvr_2	4trj_1	0.7241	Oxidoreductase	cluster_10
+P9WGR0	Q9CBM1	4trj_1	2ntv_1	1.2413	Oxidoreductase	cluster_10
+Q9QYY9	P08319	1e3e_2	3cos_3	1.4853	Oxidoreductase	cluster_10
+Q9QYY9	P00327	1e3e_2	1a71_2	2.0052	Oxidoreductase	cluster_10
+Q9QYY9	P00326	1e3e_2	1ht0_1	2.094	Oxidoreductase	cluster_10
+Q9QYY9	P00325	1e3e_2	1hdz_2	2.1643	Oxidoreductase	cluster_10
+Q9QYY9	P26325	1e3e_2	1cdo_2	1.5292	Oxidoreductase	cluster_10
+Q9QYY9	P11766	1e3e_2	1ma0_1	1.597	Oxidoreductase	cluster_10
+P36959	Q9P2T1	2ble_1	2a7r_3	2.8396	Oxidoreductase	cluster_10
+Q9KQG2	Q51344	1mb4_1	5bnt_2	0.5429	Oxidoreductase	cluster_10
+P0A9Q9	Q51344	1gl3_1	5bnt_2	1.2823	Oxidoreductase	cluster_10
+P80276	O60218	1ah0_1	1zua_1	0.7704	Oxidoreductase	cluster_10
+Q38AR9	Q0J8A4	4p8r_3	3e5r_2	0.5631	Oxidoreductase	cluster_10
+Q38AR9	P00357	4p8r_3	1gpd_2	1.4695	Oxidoreductase	cluster_10
+P48812	Q0J8A4	4k9d_2	3e5r_2	0.9121	Oxidoreductase	cluster_10
+P48812	P00357	4k9d_2	1gpd_2	1.6489	Oxidoreductase	cluster_10
+O14556	P00357	5c7o_2	1gpd_2	4.2853	Oxidoreductase	cluster_10
+Q0J8A4	P56649	3e5r_2	1dss_2	0.6605	Oxidoreductase	cluster_10
+Q0J8A4	P00357	3e5r_2	1gpd_2	1.4034	Oxidoreductase	cluster_10
+P56649	P00357	1dss_2	1gpd_2	1.4914	Oxidoreductase	cluster_10
+P00357	P46795	1gpd_2	3hja_1	1.7727	Oxidoreductase	cluster_10
+Q6GIL8	P46795	3ksd_3	3hja_1	1.9592	Oxidoreductase	cluster_10
+A9W386	Q2YLR9	4ros_1	3gvh_4	1.2409	Oxidoreductase	cluster_10
+Q5NGQ3	Q63SW7	3nrc_2	4rlh_2	0.8261	Oxidoreductase	cluster_10
+G8NVB5	O08375	4xyb_2	2gsd_1	0.6564	Oxidoreductase	cluster_10
+G8NVB5	P33160	4xyb_2	2nad_1	4.6954	Oxidoreductase	cluster_10
+P51977	P00352	1bxs_1	4wb9_1	4.5903	Oxidoreductase	cluster_10
+Q59718	P80702	2dkn_1	1fk8_1	2.1463	Oxidoreductase	cluster_10
+Q64105	P35270	1nas_1	4hwk_2	0.739	Oxidoreductase	cluster_10
+P10807	P00334	1b14_2	1mg5_2	0.5656	Oxidoreductase	cluster_10
+P0A8G6	E2QJP6	2r96_2	4dy4_1	1.9001	Oxidoreductase	cluster_10
+P9WNX1	O30463	1df7_1	2w3v_1	0.663	Oxidoreductase	cluster_10
+P28861	Q8ZKP5	1fdr_1	3fpk_1	0.4598	Oxidoreductase	cluster_10
+Q4D3W2	A2RJT9	2djl_1	1dor_2	0.7632	Oxidoreductase	cluster_10
+Q8VDQ1	Q8N8N7	2zb3_1	2vna_1	0.5127	Oxidoreductase	cluster_10
+Q65XK0	Q01292	3fr8_1	1qmg_3	1.8589	Oxidoreductase	cluster_10
+Q834R3	Q9Y052	3uwl_2	4iqq_4	4.9298	Methyltransferase;Transferase	cluster_11
+Q834R3	P13100	3uwl_2	1ci7_1	4.9437	Methyltransferase;Transferase	cluster_11
+Q9Y052	P13100	4iqq_4	1ci7_1	1.2866	Methyltransferase;Transferase	cluster_11
+Q8ABD0	Q99707	3k13_2	4ccz_1	4.5589	Methyltransferase;Transferase	cluster_11
+O50008	P82610	1u1j_1	4l64_1	1.6446	Methyltransferase;Transferase	cluster_11
+Q9F1Y5	D3KYU3	3vc1_12	4f84_1	1.162	Methyltransferase;Transferase	cluster_11
+P43912	P0A873	1uak_1	1p9p_1	0.7489	Methyltransferase;Transferase	cluster_11
+Q7LHI2	Q7LIJ0	1h46_1	1z3w_1	0.1606	Glycosidase;Hydrolase	cluster_14
+P33022	C3T3U2	3b9x_2	3mkn_1	0.5306	Glycosidase;Hydrolase	cluster_14
+Q9AGY4	P26393	4ho2_1	1iin_1	0.9566	Nucleotidyltransferase;Transferase	cluster_19
+Q9AGY4	Q9F7G8	4ho2_1	1mp4_2	0.9767	Nucleotidyltransferase;Transferase	cluster_19
+Q9AGY4	A4JC15	4ho2_1	5ify_3	0.8918	Nucleotidyltransferase;Transferase	cluster_19
+P22607	P22455	4k33_1	4qrc_1	4.6338	Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_20
+P56524	Q8WUI4	2vqj_1	3c0z_2	4.8171	Chromatin regulator;Hydrolase;Repressor	cluster_26
+O60547	Q51366	1t2a_7	1rpn_1	1.5447	Lyase	cluster_30
+P9WNP5	P73495	1q51_2	4i4z_1	3.1078	Lyase	cluster_30
+P0ABU0	Q5HH38	3t88_4	2uzf_1	0.9925	Lyase	cluster_30
+P0ABU0	P73495	3t88_4	4i4z_1	3.0731	Lyase	cluster_30
+Q5HH38	P73495	2uzf_1	4i4z_1	1.1601	Lyase	cluster_30
+Q8ZMF7	Q63T71	3t80_3	3iew_2	0.9147	Lyase	cluster_30
+Q8ZMF7	Q63T71	3t80_3	3iew_3	0.9147	Lyase	cluster_30
+Q8ZMF7	Q3JRA0	3t80_3	3f0f_1	1.3994	Lyase	cluster_30
+Q8ZMF7	B4EC22	3t80_3	4c8e_5	1.559	Lyase	cluster_30
+Q63T71	Q3JRA0	3iew_2	3f0f_1	0.9885	Lyase	cluster_30
+Q63T71	Q3JRA0	3iew_3	3f0f_1	0.9885	Lyase	cluster_30
+Q63T71	B4EC22	3iew_2	4c8e_5	0.9598	Lyase	cluster_30
+Q63T71	B4EC22	3iew_3	4c8e_5	0.9598	Lyase	cluster_30
+P22748	Q64444	3f7b_2	3znc_1	2.0993	Lyase	cluster_30
+P43166	P00918	3mdz_1	1a42_1	0.5144	Lyase	cluster_30
+P43166	P00915	3mdz_1	1bzm_1	0.863	Lyase	cluster_30
+P00918	P00915	1a42_1	1bzm_1	0.9553	Lyase	cluster_30
+Q8N1Q1	P00915	3da2_2	1bzm_1	3.0874	Lyase	cluster_30
+P45025	P0A749	2rl1_1	1a2n_1	0.7837	Transferase	cluster_32
+P0A749	Q9KP62	1a2n_1	4r7u_2	0.6951	Transferase	cluster_32
+P0A749	B5F9P4	1a2n_1	3vcy_4	0.7877	Transferase	cluster_32
+P13745	P26697	1f3b_1	1vf2_1	1.0274	Transferase	cluster_32
+P13745	P24472	1f3b_1	1b48_1	1.1181	Transferase	cluster_32
+P10648	P26697	1ml6_1	1vf2_1	1.0973	Transferase	cluster_32
+P10648	P24472	1ml6_1	1b48_1	1.0577	Transferase	cluster_32
+P26697	P24472	1vf2_1	1b48_1	3.3826	Transferase	cluster_32
+P00889	P23007	2cts_1	1csc_1	0.4111	Transferase	cluster_32
+O06644	P69902	1p5r_2	1pt5_2	0.6911	Transferase	cluster_32
+P0AB85	P41780	4xgx_1	3pnd_4	1.9767	Transferase	cluster_32
+P04905	P28161	1mtc_2	1hna_1	4.3307	Transferase	cluster_32
+P08010	P28161	1b4p_1	1hna_1	0.8391	Transferase	cluster_32
+P08010	P09488	1b4p_1	2f3m_5	3.9973	Transferase	cluster_32
+P28161	P09488	1hna_1	2f3m_5	1.0099	Transferase	cluster_32
+P56273	Q00987	4j7d_1	1rv1_5	0.699	Transferase	cluster_32
+Q9Y233	Q9QYJ6	2our_1	2o8h_1	0.8313	Allosteric enzyme;Hydrolase	cluster_34
+P31749	P31751	3cqu_1	1o6k_1	0.9845	Developmental protein;Kinase;Serine/threonine-protein kinase;Transferase	cluster_36
+P21164	Q2RM91	3qus_1	4iok_1	1.698	Ligase	cluster_38
+Q5H614	P0A1F0	3r5f_1	3i12_4	1.0104	Ligase	cluster_38
+P12039	O66949	2xcl_1	2yw2_2	1.2145	Ligase	cluster_38
+P37798	P43873	2vqd_1	4mv1_1	1.1129	Ligase	cluster_38
+O57978	Q58987	4o7l_1	2z02_2	0.6569	Ligase	cluster_38
+Q2FV22	Q6GDK5	3ag6_1	2x3f_2	0.4181	Ligase	cluster_38
+B4RKE7	P9WIL4	5kwv_2	4ddh_2	2.0831	Ligase	cluster_38
+P9WIL5	P9WIL4	1n2b_1	4ddh_2	0.3083	Ligase	cluster_38
+Q2YQ76	P59078	4py2_3	5k0s_1	1.3334	Aminoacyl-tRNA synthetase;Ligase	cluster_39
+Q4Q5S8	D0AB09	2wsa_1	2wuu_1	0.9821	Acyltransferase;Transferase	cluster_40
+A5K1A2	P30419	2ync_1	4c2y_1	0.7254	Acyltransferase;Transferase	cluster_40
+O60551	P30419	4c2x_1	4c2y_1	0.5188	Acyltransferase;Transferase	cluster_40
+P14743	Q9UVX3	1iid_1	4cav_1	1.0794	Acyltransferase;Transferase	cluster_40
+P48026	P21673	3bj7_2	2b3v_1	0.7468	Acyltransferase;Transferase	cluster_40
+Q8VDF3	Q9UIK4	2yaa_1	2cke_2	0.5963	Calmodulin-binding;Kinase;Serine/threonine-protein kinase;Transferase	cluster_45
+Q8VDF3	P53355	2yaa_1	1ig1_1	2.2897	Calmodulin-binding;Kinase;Serine/threonine-protein kinase;Transferase	cluster_45
+Q8DQB5	Q839Z1	4lpb_1	4gee_1	0.9428	DNA-binding;Isomerase;Topoisomerase	cluster_47
+P9WG45	Q5SHZ4	3zkb_14	1kij_2	3.3887	DNA-binding;Isomerase;Topoisomerase	cluster_47
+Q5SHZ4	P0AES6	1kij_2	1ei1_1	3.1621	DNA-binding;Isomerase;Topoisomerase	cluster_47
+A5TYT6	P35558	4wou_1	1khb_1	2.2247	Decarboxylase;Lyase	cluster_51
+P9WIH3	P35558	4r43_1	1khb_1	1.5806	Decarboxylase;Lyase	cluster_51
+P35558	P07379	1khb_1	2qf2_1	0.6251	Decarboxylase;Lyase	cluster_51
+P09960	Q6IP81	2r59_1	4gaa_2	0.9406	Hydrolase;Metalloprotease;Protease	cluster_52
+P08473	P08049	1r1i_1	4zr5_1	0.704	Hydrolase;Metalloprotease;Protease	cluster_52
+C3W5S0	Q5EP34	4avg_2	4e5f_4	1.2593	Endonuclease;Hydrolase;Nuclease	cluster_53
+C3W5S0	P03433	4avg_2	5fdg_1	0.8173	Endonuclease;Hydrolase;Nuclease	cluster_53
+Q5EP34	P03433	4e5f_4	5fdg_1	0.7571	Endonuclease;Hydrolase;Nuclease	cluster_53
+D9J2T9	P16094	3qji_1	1ahb_1	0.446	Hydrolase;Protein synthesis inhibitor;Toxin	cluster_59
+P21836	P04058	1q83_1	1acj_1	0.7302	Hydrolase;Serine esterase	cluster_68
+Q6L545	Q9MAA7	3ebl_4	2zsh_1	0.6929	Hydrolase;Receptor	cluster_70
+Q29599	P00973	4rwn_1	4ig8_1	0.6634	Nucleotidyltransferase;RNA-binding;Transferase	cluster_77
+P80025	A5JUY8	3ogw_1	3fnl_1	0.5975	Antibiotic;Antimicrobial;Oxidoreductase;Peroxidase	cluster_78
+P04406	P46406	1u8f_1	1j0x_2	0.6994	Oxidoreductase;Transferase	cluster_79
+O12158	P24740	2r5p_2	3lzs_1	0.697	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P12499	2r5p_2	1hxw_1	0.5592	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P05959	2r5p_2	2fxe_1	0.6095	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P04587	2r5p_2	1bdl_1	0.8709	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P03367	2r5p_2	1a8g_1	0.6876	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P04585	2r5p_2	1bv7_1	0.7169	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P03366	2r5p_2	1a9m_1	0.6796	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P0C6F2	2r5p_2	3vfa_1	0.5003	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+O12158	P05896	2r5p_2	1siv_1	0.7182	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P12499	3lzs_1	1hxw_1	0.6217	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P05959	3lzs_1	2fxe_1	0.5703	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P03369	3lzs_1	1b6k_1	0.5558	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P04587	3lzs_1	1bdl_1	0.6159	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P03367	3lzs_1	1a8g_1	0.4541	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P04585	3lzs_1	1bv7_1	0.4445	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P03366	3lzs_1	1a9m_1	0.494	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P0C6F2	3lzs_1	3vfa_1	0.5361	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P35963	3lzs_1	1k6c_1	0.8277	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P24740	P05896	3lzs_1	1siv_1	0.7146	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P05959	1hxw_1	2fxe_1	0.6862	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P03369	1hxw_1	1b6k_1	0.5737	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P04587	1hxw_1	1bdl_1	0.7422	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P03367	1hxw_1	1a8g_1	0.6375	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P04585	1hxw_1	1bv7_1	0.6696	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P03366	1hxw_1	1a9m_1	0.6314	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P0C6F2	1hxw_1	3vfa_1	0.4698	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P35963	1hxw_1	1k6c_1	0.8899	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P12499	P05896	1hxw_1	1siv_1	0.7204	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P03369	2fxe_1	1b6k_1	0.5794	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P04587	2fxe_1	1bdl_1	0.7837	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P03367	2fxe_1	1a8g_1	0.494	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P04585	2fxe_1	1bv7_1	0.5116	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P03366	2fxe_1	1a9m_1	0.5984	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P0C6F2	2fxe_1	3vfa_1	0.6062	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P35963	2fxe_1	1k6c_1	0.7214	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P05959	P05896	2fxe_1	1siv_1	0.6934	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P04587	1b6k_1	1bdl_1	0.7706	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P03367	1b6k_1	1a8g_1	0.4601	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P04585	1b6k_1	1bv7_1	0.4901	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P03366	1b6k_1	1a9m_1	0.5458	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P0C6F2	1b6k_1	3vfa_1	0.6343	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P35963	1b6k_1	1k6c_1	0.8033	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03369	P05896	1b6k_1	1siv_1	0.7232	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04587	P03367	1bdl_1	1a8g_1	0.6422	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04587	P04585	1bdl_1	1bv7_1	0.6551	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04587	P03366	1bdl_1	1a9m_1	0.6783	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04587	P0C6F2	1bdl_1	3vfa_1	0.7069	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04587	P35963	1bdl_1	1k6c_1	0.9666	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04587	P05896	1bdl_1	1siv_1	0.8356	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03367	P04585	1a8g_1	1bv7_1	0.3108	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03367	P03366	1a8g_1	1a9m_1	0.4913	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03367	P0C6F2	1a8g_1	3vfa_1	0.6067	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03367	P35963	1a8g_1	1k6c_1	0.7956	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03367	P05896	1a8g_1	1siv_1	0.7067	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04585	P03366	1bv7_1	1a9m_1	0.5081	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04585	P0C6F2	1bv7_1	3vfa_1	0.6324	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04585	P35963	1bv7_1	1k6c_1	0.7856	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P04585	P05896	1bv7_1	1siv_1	0.6897	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03366	P0C6F2	1a9m_1	3vfa_1	0.5917	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03366	P35963	1a9m_1	1k6c_1	0.8053	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P03366	P05896	1a9m_1	1siv_1	0.6763	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P0C6F2	P35963	3vfa_1	1k6c_1	0.875	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P0C6F2	P05896	3vfa_1	1siv_1	0.7074	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P35963	P05896	1k6c_1	1siv_1	1.1631	Aspartyl protease;DNA-binding;DNA-directed DNA polymerase;Endonuclease;Hydrolase;Multifunctional enzyme;Nuclease;Nucleotidyltransferase;Protease;RNA-binding;RNA-directed DNA polymerase;Transferase;Viral nucleoprotein	cluster_84
+P29597	Q9R117	3lxp_1	4e1z_1	1.2587	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P43405	P43403	3emg_1	1u59_1	1.0997	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+Q4JIM5	P42684	4xli_1	2xyn_2	1.1555	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P12931	P06239	1y57_1	1qpd_1	2.0084	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P12931	P25911	1y57_1	2zv9_1	1.7647	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P12931	P07948	1y57_1	3a4o_1	1.4921	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P06239	P25911	1qpd_1	2zv9_1	1.6189	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P25911	P07948	2zv9_1	3a4o_1	1.1939	Kinase;Transferase;Tyrosine-protein kinase	cluster_91
+P39099	P0C0V0	3stj_9	3mh7_2	0.9493	Hydrolase;Protease;Serine protease	cluster_100
+P35228	P29474	3e7g_8	1m9j_2	1.4625	Calmodulin-binding;Oxidoreductase	cluster_105
+P9WFX0	P9WFX1	3veh_1	3rv6_1	1.4904	Isomerase;Lyase	cluster_114
+P68106	P62942	1c9h_1	1a7x_1	0.8601	Isomerase;Rotamase	cluster_118
+P18203	P62942	1fkl_1	1a7x_1	0.7914	Isomerase;Rotamase	cluster_118
+P21802	P11362	1oec_1	1agw_1	4.6991	Heparin-binding;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_121
+P49356	Q02293	1jcq_1	1n95_2	0.8822	Prenyltransferase;Transferase	cluster_135
+Q16875	P25114	2axn_1	1bif_1	2.1761	Hydrolase;Kinase;Multifunctional enzyme;Transferase	cluster_136
+P08659	P13129	3ies_1	2d1s_1	1.0511	Monooxygenase;Oxidoreductase;Photoprotein	cluster_137
+Q8N884	Q8C6L5	4o67_1	4k97_1	1.8573	DNA-binding;Nucleotidyltransferase;Transferase	cluster_139
+Q6NZB1	Q96LA8	4c03_1	4hc4_1	1.4504	Chromatin regulator;Methyltransferase;Repressor;Transferase	cluster_142
+Q6NUA1	O14744	4g56_2	4gqb_1	2.0579	Chromatin regulator;Methyltransferase;Repressor;Transferase	cluster_142
+P35354	Q05769	5ikq_1	1cx2_2	0.5101	Dioxygenase;Oxidoreductase;Peroxidase	cluster_143
+Q00944	Q05397	2j0j_1	1mp8_1	1.9353	Developmental protein;Kinase;Transferase;Tyrosine-protein kinase	cluster_144
+P54760	P54763	2vwu_1	1jpa_1	3.9653	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+P54760	Q15375	2vwu_1	3dko_1	0.8653	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+P54760	Q03137	2vwu_1	2xyu_1	0.8871	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+P54763	Q15375	1jpa_1	3dko_1	2.7642	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+P54763	Q03137	1jpa_1	2xyu_1	0.6912	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+Q15375	Q03137	3dko_1	2xyu_1	0.8995	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+P04629	Q16620	4aoj_3	4at3_1	1.3749	Developmental protein;Kinase;Receptor;Transferase;Tyrosine-protein kinase	cluster_152
+P30615	P14618	4hyv_1	4fxf_2	2.0434	Allosteric enzyme;Kinase;Transferase	cluster_154
+Q9NZ08	Q6P179	2yd0_1	4jbs_1	1.3409	Aminopeptidase;Hydrolase;Metalloprotease;Protease	cluster_161
+A6QHR2	P00952	1jik_1	3ts1_1	1.1102	Aminoacyl-tRNA synthetase;Ligase;RNA-binding	cluster_165
+P00378	P00375	1dr2_1	1u70_1	0.9722	Oxidoreductase;RNA-binding	cluster_167
+P00378	P00374	1dr2_1	1boz_1	0.7905	Oxidoreductase;RNA-binding	cluster_167
+P00375	P00374	1u70_1	1boz_1	0.8005	Oxidoreductase;RNA-binding	cluster_167
+Q86X55	Q4AE70	2y1w_5	3b3f_2	0.5013	Chromatin regulator;Methyltransferase;Transferase	cluster_178
+Q86X55	Q9WVG6	2y1w_5	2v74_1	3.0518	Chromatin regulator;Methyltransferase;Transferase	cluster_178
+P09874	P26446	1uk0_1	1a26_1	0.9329	DNA-binding;Glycosyltransferase;Transferase	cluster_189
+Q13451	Q02790	3o5r_1	4drj_1	0.6652	Chaperone;Isomerase;Rotamase	cluster_194
+Q47592	J7I4B7	4azw_1	4ax8_2	1.0192	Kinase;Methyltransferase;Transferase	cluster_203
+P14740	P22411	2oae_1	2aj8_7	0.6886	Aminopeptidase;Hydrolase;Protease;Serine protease	cluster_205
+P00520	P00519	1iep_1	2e2b_2	0.3948	DNA-binding;Kinase;Transferase;Tyrosine-protein kinase	cluster_212
+P51561	P0ACT4	2vpr_1	1ork_1	1.0384	DNA-binding;Repressor	cluster_17
+P51561	P04483	2vpr_1	4ac0_1	0.9342	DNA-binding;Repressor	cluster_17
+P0ACT4	P04483	1ork_1	4ac0_1	1.0175	DNA-binding;Repressor	cluster_17
+P11142	P19120	3fzf_1	1atr_1	2.2625	Chaperone;Repressor	cluster_18
+Q9Z0Y9	Q13133	2acl_8	3ipq_1	0.7037	Activator;DNA-binding;Receptor	cluster_25
+P42443	P0A7G6	1xp8_1	1xms_1	2.2476	DNA-binding	cluster_35
+P42443	Q59560	1xp8_1	2zr9_1	2.9341	DNA-binding	cluster_35
+P0A7G6	Q59560	1xms_1	2zr9_1	1.5098	DNA-binding	cluster_35
+Q9Y3Q4	O88703	3otf_1	1q3e_2	4.7123	Ion channel;Ligand-gated ion channel;Potassium channel;Sodium channel;Voltage-gated channel	cluster_48
+Q9UL51	O88703	3u10_1	1q3e_2	4.9354	Ion channel;Ligand-gated ion channel;Potassium channel;Sodium channel;Voltage-gated channel	cluster_48
+Q9PTN2	P11473	2hbh_1	1db1_1	0.7176	DNA-binding;Receptor	cluster_50
+Q9PTN2	P13053	2hbh_1	1rjk_1	0.6647	DNA-binding;Receptor	cluster_50
+P11473	P13053	1db1_1	1rjk_1	0.5248	DNA-binding;Receptor	cluster_50
+B9UCQ4	E0VVT4	3ixp_1	4ozt_1	1.8238	DNA-binding;Receptor	cluster_50
+P10827	P10828	1nav_1	1n46_2	4.2458	DNA-binding;Receptor	cluster_50
+P13631	P10276	1exa_1	1dkf_1	4.7649	DNA-binding;Receptor	cluster_50
+P13631	P10826	1exa_1	4dm6_2	0.7535	DNA-binding;Receptor	cluster_50
+P10276	P22605	1dkf_1	1xdk_2	4.1703	DNA-binding;Receptor	cluster_50
+P22605	P10826	1xdk_2	4dm6_2	3.9066	DNA-binding;Receptor	cluster_50
+Q2LG68	Q91MB1	4cb4_1	4eqk_1	1.6089	RNA-binding	cluster_58
+Q91MB1	P31345	4eqk_1	2vqz_5	0.7022	RNA-binding	cluster_58
+P12883	P24733	4db1_1	1b7t_1	4.2268	Actin-binding;Calmodulin-binding;Motor protein;Muscle protein;Myosin	cluster_83
+P41148	P14625	1qy5_1	4nh9_1	0.5997	Chaperone	cluster_89
+P02829	P54651	1am1_1	4xc0_1	0.9825	Chaperone	cluster_89
+P02829	P08238	1am1_1	1uym_1	1.4194	Chaperone	cluster_89
+P54651	Q18688	4xc0_1	4gqt_2	0.7369	Chaperone	cluster_89
+P54651	P08238	4xc0_1	1uym_1	1.3354	Chaperone	cluster_89
+P54651	P07900	4xc0_1	1byq_1	1.0056	Chaperone	cluster_89
+Q18688	P08238	4gqt_2	1uym_1	1.4116	Chaperone	cluster_89
+P08238	P07900	1uym_1	1byq_1	1.4935	Chaperone	cluster_89
+P42260	P22756	2xxv_1	1vso_1	2.3346	Ion channel;Ligand-gated ion channel;Receptor	cluster_123
+P19491	P19492	1ftl_2	3rt8_1	3.9041	Ion channel;Ligand-gated ion channel;Receptor	cluster_123
+P19491	P19493	1ftl_2	3kfm_1	1.3072	Ion channel;Ligand-gated ion channel;Receptor	cluster_123
+P19492	P19493	3rt8_1	3kfm_1	0.5921	Ion channel;Ligand-gated ion channel;Receptor	cluster_123
+Q13224	Q00960	5ewj_1	3qem_1	0.4602	Ion channel;Ligand-gated ion channel;Receptor	cluster_123
+Q8H1R0	Q84MC7	3r6p_1	3oqu_2	0.7231	Protein phosphatase inhibitor;Receptor	cluster_145
+Q9SSM7	Q5Z8S0	3oji_1	4oic_1	0.9635	Protein phosphatase inhibitor;Receptor	cluster_145
+Q9SSM7	O80992	3oji_1	3kb0_1	1.3624	Protein phosphatase inhibitor;Receptor	cluster_145
+P39047	Q27709	4nqg_1	1el4_1	3.2731	Photoprotein	cluster_155
+P21760	Q9I9P7	3sao_1	2kt4_1	2.035	Antibiotic;Antimicrobial	cluster_158
+P45446	P51449	1n4h_1	3kyt_1	1.4786	Activator;Developmental protein;DNA-binding;Receptor	cluster_172
+Q62735	Q96RI1	1osv_1	3bej_1	1.637	Activator;DNA-binding;Receptor;Repressor	cluster_183
+P0DMV8	P0DMV9	5aqz_1	4io8_1	0.5008	Chaperone;Host cell receptor for virus entry;Receptor	cluster_198
+P68135	P68134	1atn_1	4b1u_1	5.6096	Muscle protein	cluster_12
+P10824	P63096	1bof_1	1y3a_1	35.7391	Transducer	cluster_15	GDP
+Q5SHS3	Q72I39	2dt5_1	3ikt_1	7.1033	DNA-binding;Repressor	cluster_17
+Q72I39	Q9X2V5	3ikt_1	1xcb_7	32.4749	DNA-binding;Repressor	cluster_17
+P09951	P17599	1pk8_1	1aux_1	37.3852	Actin-binding	cluster_24
+P55055	Q13133	1p8d_2	3ipq_1	6.3632	Activator;DNA-binding;Receptor	cluster_25
+P37231	Q03181	1fm6_2	1y0s_1	25.7715	Activator;DNA-binding;Receptor	cluster_25
+Q8KLP4	Q7B8P6	3p9t_2	3hgg_1	8.4224	DNA-binding	cluster_35
+O88704	O88703	3u0z_2	1q3e_2	5.1309	Ion channel;Ligand-gated ion channel;Potassium channel;Sodium channel;Voltage-gated channel	cluster_48
+P10276	P10826	1dkf_1	4dm6_2	5.8822	DNA-binding;Receptor	cluster_50
+P63000	P60953	1e96_1	1a4r_1	14.854	Serine/threonine-protein kinase	cluster_72
+P07700	P07550	2vt4_2	2rh1_1	29.0088	G-protein coupled receptor;Receptor;Transducer	cluster_86
+P41145	P32300	4djh_1	4ej4_1	23.1428	G-protein coupled receptor;Receptor;Transducer	cluster_86
+P12861	P08238	3opd_1	1uym_1	7.368	Chaperone	cluster_89
+P12861	P07900	3opd_1	1byq_1	6.3199	Chaperone	cluster_89
+P52778	Q6VT83	4ryv_3	4ma6_1	10.9873	Pathogenesis-related protein	cluster_120
+Q6DNN3	Q4FAU9	5fmm_1	4es5_4	13.816	RNA-directed RNA polymerase;RNA-binding	cluster_138
+P02592	Q27709	1ej3_1	1el4_1	7.1019	Photoprotein	cluster_155	
